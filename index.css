@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding:0
+}
+html,body{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+#main{
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left: -320px;
+    -webkit-transform-origin:top;
+    transform-origin: top;
+}
+#list{height: 100%}
+#list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#list li.zIndex{
+    z-index: 5;
+}
+#list li:nth-child(1){
+    background-image:url(img/beijing1.jpg) ;
+    background-size: 100%;
+}
+#list li:nth-child(2){
+    background-image:url(img/beijing3.jpg) ;
+}
+#list li:nth-child(3){
+    background-image:url(img/2.jpg) ;
+}
+#list li:nth-child(4){
+    background-image:url(img/banner.jpg) ;
+    background-size: cover;
+}
+.a1 {
+    position: absolute;
+    bottom:10%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.a1 .title{
+    font-size: 28px;
+    color: red;
+    position: absolute;
+    top: -230px;
+    left: 150px;
+}
+.a1 div:nth-child(odd){
+    color: #ff6600;
+    -webkit-transform: translate(500px,0);
+    transform:translate(500px,0);
+}
+.a1 div:nth-child(even){
+    color: #000000;
+
+    -webkit-transform: translate(-500px,0);
+    transform:translate(-500px,0);
+}
+#a1 div{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition:0.5s ease-out;
+    transition:0.5s ease-out;
+}
+/*方法一:动态的添加或者删除类名(id名)来控制动画效果
+  方法二:如果是写的animation动画,可以通过设置animation-play-state值是paused停止,是running是播放
+*/
+
+.a2 p{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -45px;
+    margin-top: -45px;
+}
+.a2 p:nth-child(1){
+    background: url(img/c1.png) no-repeat;
+}
+.a2 p:nth-child(2){
+    background: url(img/c2.png) no-repeat;
+}
+.a2 p:nth-child(3){
+    background: url(img/tu1.png) no-repeat;
+}
+.a2 p:nth-child(4){
+    background: url(img/tu2.png) no-repeat;
+}
+.a2 p:nth-child(5){
+    background: url(img/tu3.png) no-repeat;
+}
+.a2 p:nth-child(6){
+    background: url(img/tu4.png) no-repeat;
+}
+#a2 p {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+#a2 p:nth-child(1){
+    left: 50%;
+    top: 30%
+}
+#a2 p:nth-child(2){
+    left: 20%;
+    top: 40%
+}
+#a2 p:nth-child(3){
+    left: 80%;
+    top: 40%
+}
+#a2 p:nth-child(4){
+    left: 20%;
+    top: 60%
+}
+#a2 p:nth-child(5){
+    left: 80%;
+    top: 60%
+}
+#a2 p:nth-child(6){
+    left: 50%;
+    top: 70%
+}
+.a3{
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    left:50%;
+    margin-left: -320px;
+    bottom:20%;
+    background: url(img/wenzi.png) no-repeat;
+    /*transform-style: preserve-3d;*/
+    /*-webkit-transform-style: preserve-3d;*/
+    /*perspective: 800px;*/
+}
+#a3{
+    -webkit-transform: rotateY(720deg);
+    transform: rotateY(720deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.a4 p{
+    width: 0;
+    height: 0;
+    border:3px solid #FFFFFF;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #ff6600;
+    position: absolute;
+    font-size: 24px;
+}
+.a4 p:nth-child(1){
+    left:20%;
+    top:20%;
+}
+.a4 p:nth-child(2){
+    left:20%;
+    top:45%;
+}
+.a4 p:nth-child(3){
+    left:20%;
+    top:70%;
+}
+#a4 p:nth-child(1){
+    width: 400px;
+    height: 200px;
+}
+#a4 p:nth-child(2){
+    width: 400px;
+    height: 200px;
+}
+#a4 p:nth-child(3){
+    width: 400px;
+    height: 200px;
+}
+#a4 p{
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
